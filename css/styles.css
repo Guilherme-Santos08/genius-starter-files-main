@@ -90,6 +90,9 @@ body {
 .game {
 	width: var(--game-size);
 	height: var(--game-size);
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 5rem;
 }
 
 /**********************************/
