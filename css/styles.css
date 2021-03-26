@@ -64,13 +64,24 @@
 /* 1. Tags
 /**********************************/
 
+html {
+	font-size: 62.5%;
+}
+
 body {
 	background-image: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/retina_wood.png');
+	font-family: "Bungee", verdana, sans-serif;
 }
 
 /**********************************/
 /* 2. Body
 /**********************************/
+
+.container {
+	width: var(--game-size);
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /**********************************/
 /* 3. Game
