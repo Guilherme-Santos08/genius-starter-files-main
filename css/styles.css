@@ -154,3 +154,9 @@ body {
 /**********************************/
 /* 4. Footer
 /**********************************/
+
+footer {
+	text-align: center;
+	margin-top: 5rem;
+	font-size: 1rem;
+}
