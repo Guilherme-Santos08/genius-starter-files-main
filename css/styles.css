@@ -203,6 +203,20 @@ body {
 	text-align: center;
 	text-transform: uppercase;
 }
+
+.gui__label--switch {
+	margin: 0;
+	padding-top: 0.75rem;
+}
+
+.gui__btn {
+	background-color: #00A74A;
+	width: 2.5rem;
+	height: 2.5rem;
+	margin-left: .2rem;
+	border-radius: 5rem;
+	box-shadow: 0 .2rem .3rem #222;
+}
 /**********************************/
 /* 4. Footer
 /**********************************/
