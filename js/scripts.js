@@ -32,11 +32,20 @@ _soundUrls.forEach(sndPath => {
 });
 
 _gui.switch.addEventListener("click", () => {
+	_data.gameOn = _gui.switch.classList.toggle("gui__btn-switch--on")
 
+	_gui.counter.classList.toggle("gui__counter--on")
+	_gui.counter.innerHTML = "--"
+
+	_data.strick = false
+	_data.playerCanPlay = false
+	_data.score = 0
+	_data.gameSequence = []
+	_data.playerSequence = []
 });
 
 _gui.strict.addEventListener("click", () => {
-
+	_gui.led.classList.toggle("gui__led--active")
 });
 
 _gui.start.addEventListener("click", () => {
