@@ -42,10 +42,17 @@ _gui.switch.addEventListener("click", () => {
 	_data.score = 0
 	_data.gameSequence = []
 	_data.playerSequence = []
+
+	disablePads();
+
+	_gui.led.classList.remove("gui__led--active")
 });
 
 _gui.strict.addEventListener("click", () => {
-	_gui.led.classList.toggle("gui__led--active")
+	if(!_data.gameOn){
+		return
+	}
+	_data.strict = _gui.led.classList.toggle("gui__led--active")
 });
 
 _gui.start.addEventListener("click", () => {
@@ -93,5 +100,7 @@ const changePadCursor = (cursorType) => {
 }
 
 const disablePads = () => {
-
+	_gui.pads.forEach(pad => {
+		pad.classList.remove("game__pad--active");
+	});
 }
