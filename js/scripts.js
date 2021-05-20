@@ -73,8 +73,8 @@ const startGame = () => {
 
 const setScore = () => {
    const score = _data.score.toString();
-   const display = "00".substring(0, 2 - score.length);
-   _gui.counter.innerHTML = display;
+   const display = "00".substring(0, 2 - score.length) + score;
+   _gui.counter.innerText = display;
 };
 
 const newColor = () => {
@@ -100,7 +100,7 @@ const blink = (text, callback) => {
 
          if (++counter === 3) {
             clearInterval(interval);
-            callback;
+            callback();
          }
       }
 
