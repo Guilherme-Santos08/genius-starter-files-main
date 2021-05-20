@@ -93,6 +93,11 @@ const blink = (text, callback) => {
    _gui.counter.innerHTML = text;
 
    const interval = setInterval(() => {
+      if (!_data.gameOn) {
+         clearInterval(interval);
+         _gui.counter.classList.remove("gui__counter--on");
+         return;
+      }
       if (on) {
          _gui.counter.classList.remove("gui__counter--on");
       } else {
